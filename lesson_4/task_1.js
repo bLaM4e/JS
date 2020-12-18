@@ -11,7 +11,7 @@ function con(num) {
     }
     let category = 0;
     let i = 1;
-    while (num !== 0) {
+    while (i <= 3) {
         category = num % 10;
         num = Math.floor(num / 10);
         switch (i) {
@@ -37,4 +37,4 @@ function con(num) {
 }
 
 
-console.log(con(406));
+console.log(con(3));

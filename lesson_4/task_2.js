@@ -20,6 +20,14 @@ let shoppingCart = {
         price: 900,
         quantity: 1 
     },
+    countBasketPrice() {
+        let total = 0;
+        for (const prop in shoppingCart) {
+            total += this.prop.price * this.prop.quantity
+        }
+        return total;
+    }
 }
 
-console.log(countBasketPrice(shoppingCart));
+// console.log(countBasketPrice(shoppingCart));
+console.log(shoppingCart.countBasketPrice());
