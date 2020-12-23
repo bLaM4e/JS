@@ -300,4 +300,3 @@ const game = {
 };
 
 game.run();
-
