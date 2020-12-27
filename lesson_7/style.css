@@ -29,6 +29,9 @@ td.cell{
     border: 1px dotted #eee;
     border-collapse: collapse;
 }
+.barrier{
+    background: #e6ff02;
+}
 .food{
     background: #00d021;
 }
