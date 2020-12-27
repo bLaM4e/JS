@@ -8,7 +8,7 @@
 // 4.2. При загрузке страницы на базе данного массива генерировать вывод из него. HTML-код должен содержать только div id=”catalog”
 // без вложенного кода. Весь вид каталога генерируется JS.
 
-// 'use strict';
+'use strict';
 
 let shoppingCart = {
     products: [
@@ -47,7 +47,7 @@ let shoppingCart = {
     },
 
     init() {
-        for(el of this.products) {
+        for(const el of this.products) {
             const text = `${el.title}: Цена ${el.price}: Количество ${el.quantity}`;
             document.querySelector('div').insertAdjacentHTML('afterbegin', `<p>${text}</p>`);
             // const p = document.createElement('p')
